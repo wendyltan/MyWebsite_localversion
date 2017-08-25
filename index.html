@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>index page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"  href="css/blog.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <a name="top"></a>
+    <a href="#" ><p class="lead" style="text-align: center" data-toggle="modal" data-target="#myModal" title="click for help" >need help?</p></a>
+    <hr>
+
+
+
+  <div class="modal fade" tabindex="-1" role="dialog" id = "myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">输入许可码以进入网站（快速非注册通道）：</h4>
+        </div>
+        <form action="php/authorize.php" method="post">
+          <div class="modal-body">
+            <input type="number" class="form-control" placeholder="输入8位许可码" name="name">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+            <input type="submit" class="btn btn-primary" value="确认许可码">
+          </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  
+
+  
+        
+    
+</form>
+  <div class="container">
+      <div class="row" style="padding: 100px">
+        <form class="form-horizontal" action="php/logincheck.php" method="post">
+          <div class="form-group">
+            <div class="col-sm-7 col-sm-offset-4">
+              <h1 style="font-size:450% ;padding-bottom:50px">请登录。。</h1>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputName3" class="col-sm-2 control-label col-sm-offset-1">Name</label>
+            <div class="col-sm-7">
+              <input type="text" name="username" class="form-control" id="inputName3" placeholder="Name" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label col-sm-offset-1">Password</label>
+            <div class="col-sm-7">
+              <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-7">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="remember">Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-10">
+              <button type="submit" class="btn btn-default" name="submit" value="登陆">Log in</button>
+              <button class="btn btn-default"><a href="signup.html">Sign up</a></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <footer class="blog-footer">
+      <p>Copyright © 2017 wendyltanpcy's own website. All Rights Reserved</p>
+      <p>
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
