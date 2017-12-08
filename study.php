@@ -41,7 +41,17 @@ else
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+  <!-- wendyltanpcy.xyz Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?94400b20bb803cd7e40939fc674e6103";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
   <body>
    <a name="top"></a>
     <div class="blog-masthead">
@@ -140,13 +150,15 @@ else
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:white">
-          基于python的百度文库文档爬取<span class="badge">15</span>
+          基于Java的Android开发<span class="badge">Latest stuff</span>
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-       一直没有开工，几行字表示下存在感
+       发现了很多有意思的东西。在实际去做一个项目的时候，能发现很多问题，比如控件长按或者拖动的响应，安卓7.0和6.0对权限控制的
+       不同，看到代码有个叫做<code>FileProvider</code>以及<code>PermissionGen</code>处理拍照权限，以及使用<code>LitePal</code>对数据进行存储，个人认为比sql语句操作简单的多（果然orm最棒了）引入了许多外部的类，还在琢磨中。。github进度更新缓慢
+       ，有灵感的时候会加一些东西吧。
       </div>
     </div>
   </div>

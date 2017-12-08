@@ -1,5 +1,5 @@
 <?php //输入密码后访问本页内容
-$password = "1312";//这里是密码 
+$password = "1314";//这里是密码 
 $p = "";if(isset($_COOKIE["isview"]) and $_COOKIE["isview"] == $password){ 
 $isview = true;}else{ 
 if(isset($_POST["pwd"])){ 
@@ -29,7 +29,17 @@ setcookie("isview",$_POST["pwd"],time()+3600*3);$isview = true;}else{$p = (empty
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+  <!-- wendyltanpcy.xyz Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?94400b20bb803cd7e40939fc674e6103";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
   <body>
     <?php session_start();?>
     <a name="top"></a>
@@ -191,6 +201,33 @@ setcookie("isview",$_POST["pwd"],time()+3600*3);$isview = true;}else{$p = (empty
           
           </div><!-- /.blog-post -->
 
+          <div class="blog-post">
+            <h2 class="blog-post-title">Pick up new shits</h2>
+            <p class="blog-post-meta">2017/9/8 <a name="fifth">wendy</a></p>
+
+            <p class="lead">开始学习新东西啦
+            </p>
+            <hr>
+          
+
+            <h3>生活总是艰难，但也得大步向前</h3>
+            <p>开学第一周真的贼艰难。。每天做梦。估计自己还是太紧张了，适当调节情绪</p>
+            <br>
+            <p>开始学习安卓啦，这次目标是要把这本书基本过一遍！不能像上次那样半途而废了</p>
+            <br>
+            <p>横溪说我这叫还是没能释怀。可能吧</p>
+
+            <br>
+            
+            <hr>
+
+            
+
+
+            
+          
+          </div><!-- /.blog-post -->
+
 
 
         </div><!-- /.blog-main -->
@@ -207,6 +244,7 @@ setcookie("isview",$_POST["pwd"],time()+3600*3);$isview = true;}else{$p = (empty
               <li><a href="#second">2017/5/20</a></li>
               <li><a href="#third">2017/5/30</a></li>
               <li><a href="#fourth">2017/7/19</a></li>
+              <li><a href="#fifth">2017/9/8</a></li>
             </ol>
           </div>
           <div class="sidebar-module">
